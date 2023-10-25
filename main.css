@@ -17,7 +17,22 @@ h1 {
     border: 3px solid purple;
 }
 
-.customer{
+.Card{
     border: 2px solid red;
     height: auto;
+    justify-content: center;
+}
+
+.email{
+    color: gray;
+}
+
+img {
+    border-radius: 40px 80px 40px 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer-info{
+    text-align: center;
 }
