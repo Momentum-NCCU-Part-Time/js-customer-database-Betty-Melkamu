@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
 }
 
@@ -12,27 +11,50 @@ h1 {
 
 .container {
     display: grid;
-    grid-template: repeat(3, 1fr)/ repeat(4, 1fr);
-    height: 90vh;
-    border: 3px solid purple;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: auto;
+    ;
 }
 
-.Card{
-    border: 2px solid red;
-    height: auto;
+.customer-card{
     justify-content: center;
+    align-content: center;
+    margin: 2rem;
+    max-height: 100%;
 }
+
+.customer-name {
+    text-align: center;
+    padding-top: .25rem;
+    padding-bottom: .5rem;
+}
+
+.customer-info {
+    text-align: center;
+    padding-top: .1rem;
+}
+
 
 .email{
     color: gray;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 img {
-    border-radius: 40px 80px 40px 80px;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50% 75% 50% 75%;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-.customer-info{
-    text-align: center;
+ul {
+    list-style-type: none;
+}
+
+.address-line2 {
+    padding-bottom: 8px;
 }
